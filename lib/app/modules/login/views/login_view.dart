@@ -139,7 +139,9 @@ class LoginView extends GetView<LoginController> {
                       height: 50,
                     ),
                     ElevatedButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Get.offAllNamed(Routes.HOME);
+                      },
                       style: ElevatedButton.styleFrom(
                           backgroundColor: const Color(0xFFCEA716),
                           minimumSize: const Size(345, 45),

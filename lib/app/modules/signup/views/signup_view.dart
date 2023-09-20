@@ -86,9 +86,8 @@ class SignupView extends GetView<SignupController> {
                         letterSpacing: 1,
                         fontWeight: FontWeight.w500),
                   ),
-                  Obx(() => TextFormField(
+                  TextFormField(
                       controller: controller.phoneNo,
-                      obscureText: controller.isPasswordHidden.value,
                       keyboardType: TextInputType.phone,
                       cursorColor: const Color(0xFFCEA716),
                       style: const TextStyle(color: Colors.white),
@@ -101,7 +100,7 @@ class SignupView extends GetView<SignupController> {
                           focusedBorder: UnderlineInputBorder(
                               borderSide: BorderSide(color: Color(0xFFCEA716))),
                           border: UnderlineInputBorder(),
-                          hoverColor: Colors.white))),
+                          hoverColor: Colors.white)),
                   const SizedBox(
                     height: 20,
                   ),

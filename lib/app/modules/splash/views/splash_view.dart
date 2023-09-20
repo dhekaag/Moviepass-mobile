@@ -1,14 +1,33 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-
 import 'package:get/get.dart';
-import 'package:moviepass/app/modules/signup/controllers/signup_controller.dart';
 import 'package:moviepass/app/routes/app_pages.dart';
 
-import '../controllers/splash_controller.dart';
-
-class SplashView extends GetView<SplashController> {
+class SplashView extends StatefulWidget {
   const SplashView({Key? key}) : super(key: key);
+
+  @override
+  State<SplashView> createState() => _SplashViewState();
+}
+
+class _SplashViewState extends State<SplashView>
+    with SingleTickerProviderStateMixin {
+  @override
+  void initState() {
+    super.initState();
+    SystemChrome.setEnabledSystemUIMode(SystemUiMode.immersive);
+
+    Future.delayed(const Duration(seconds: 3), () {
+      Get.offAllNamed(Routes.LOGIN);
+    });
+  }
+
+  @override
+  void dispose() {
+    SystemChrome.setEnabledSystemUIMode(SystemUiMode.manual,
+        overlays: SystemUiOverlay.values);
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
