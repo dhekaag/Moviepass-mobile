@@ -1,3 +1,5 @@
+// ignore_for_file: unnecessary_overrides, duplicate_ignore
+
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:moviepass/app/routes/app_pages.dart';
@@ -15,6 +17,7 @@ class SplashController extends GetxController {
     });
   }
 
+  // ignore: unnecessary_overrides
   @override
   void onReady() {
     super.onReady();

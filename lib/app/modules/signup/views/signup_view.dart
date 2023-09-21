@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
-
 import 'package:get/get.dart';
 import 'package:moviepass/app/data/constant/colors.dart';
-import 'package:moviepass/app/routes/app_pages.dart';
-
 import '../controllers/signup_controller.dart';
 
 class SignupView extends GetView<SignupController> {

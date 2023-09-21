@@ -8,9 +8,10 @@ environment:
 dependencies:
   carousel_slider: ^4.2.1
   cupertino_icons: ^1.0.2
+  get: 4.6.6
+  searchfield: 0.8.4
   flutter:
     sdk: flutter
-  get: 4.6.6
 
 dev_dependencies:
   flutter_lints: 2.0.3
@@ -18,11 +19,8 @@ dev_dependencies:
     sdk: flutter
 
 flutter:
-  uses-material-design: true
-
   assets:
     - assets/images/
-
   fonts:
     - family: Jost
       fonts:
@@ -34,3 +32,4 @@ flutter:
         - asset: assets/fonts/Poppins-Regular.ttf
         - asset: assets/fonts/Poppins-Italic.ttf
           style: italic
+  uses-material-design: true
